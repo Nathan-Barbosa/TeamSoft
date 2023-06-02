@@ -1,12 +1,17 @@
 import  styled  from 'styled-components'
 
 export const StyledHeader = styled.header`
+  width: 100vw;
+  padding: 16px 0;
+  background: #F4F4F4;
+`
+export const HeaderContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100vw;
-  padding: 16px 40px;
-  background: #F4F4F4;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 `
 
 export const HeaderItems = styled.div`

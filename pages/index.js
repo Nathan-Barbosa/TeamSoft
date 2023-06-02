@@ -1,14 +1,19 @@
-import Header from "@/components/header/Header.component";
+import { Container } from "@/components/Container/Container.styles";
+import Header from "@/components/Header/Header.component";
+import OrderIngredient from "@/components/OrderIngredient/OrderIngredient.component";
+import ProductInfo from "@/components/ProductInfo/ProductInfo.component";
+
 
 export default function Home() {
   return (
 
-    <>
-    <Header />
-    <div>
-      Oferta Picanha Cheddar Bacon
-    </div>    
-    </>
+    <main>
+      <Header />
+      <Container >
+        <ProductInfo />
+        <OrderIngredient />
+      </Container>
+    </main>
     
   )
 }

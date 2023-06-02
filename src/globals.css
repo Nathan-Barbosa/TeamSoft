@@ -5,18 +5,15 @@ body, html {
   padding: 0;
   font-family: 'Roboto', sans-serif;
 
-  font-style: normal;
-  font-weight: 500;
-  font-size: 28px;
-  line-height: 100%;
-  /* or 28px */
-
-  display: flex;
-  align-items: center;
 
   /* Gray darker */
-
   color: #4E4E4E;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 * {
