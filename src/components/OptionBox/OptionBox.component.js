@@ -1,12 +1,12 @@
 import CountBox  from '../CountBox/CountBox.component'
 import { StyledOptionBox } from './OptionBox.styles'
 
-const OptionBox = () => {
+const OptionBox = ({ingredient, value}) => {
   return (
     <StyledOptionBox> 
       <div>
-        <h4>Queijo cheddar</h4>
-        <p>+ R$4,99</p>
+        <h4>{ingredient}</h4>
+        <p>+ R${value}</p>
       </div>
       <CountBox width={110}/>
     </StyledOptionBox>

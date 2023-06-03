@@ -5,9 +5,9 @@ export const StyledOptionBox = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 8px;
   border-bottom: 1px solid #E8A634;
   width: 100%;
-  padding: 8px;
   font-family: 'Roboto';
 
   h4 {

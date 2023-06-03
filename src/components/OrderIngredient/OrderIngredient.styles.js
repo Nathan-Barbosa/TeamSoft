@@ -18,7 +18,6 @@ export const IngredientOptions = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 0px;
-  gap: 16px;
 
   width: 100%;
   height: 537px;
@@ -29,18 +28,25 @@ export const OptionsHeader = styled.div`
   justify-content: center;
   flex-direction: column;
   width: 100%;
-  height: 55px;
-  left: 0px;
-  top: 0px;
+  padding: 8px 16px;
   background: rgba(253, 215, 14, 0.2);
+
+  h4 {
+    margin: 2px 0;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+  }
 
   p {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
-    line-height: 20px;
     color: #E49700;
+    margin: 0;
   }  
 `
 
