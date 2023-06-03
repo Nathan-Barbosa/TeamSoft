@@ -22,6 +22,7 @@ export const IngredientOptions = styled.div`
 
   width: 100%;
   height: 537px;
+  overflow-y: scroll;
 `
 export const OptionsHeader = styled.div`
   display: flex;
@@ -32,15 +33,17 @@ export const OptionsHeader = styled.div`
   left: 0px;
   top: 0px;
   background: rgba(253, 215, 14, 0.2);
+
+  p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: #E49700;
+  }  
 `
-export const OptionBox = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid #E8A634;
-  width: 100%;
-  padding: 8px;
-`
+
 export const TextInput = styled.input`
   width: 100%;
   height: 55px;
