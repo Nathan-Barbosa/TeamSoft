@@ -53,12 +53,9 @@ export const ProductFullValue = styled.div`
   font-weight: 400;
   font-size: 32px;
   line-height: 120%;
-  /* or 38px */
 
-  display: flex;
-  align-items: center;
-
-color: #DC6E05;
+  color: #4E4E4E;
+  text-decoration-line: line-through;
 `
 export const ProductOff = styled.div`
   font-family: 'Roboto';
@@ -68,11 +65,5 @@ export const ProductOff = styled.div`
   line-height: 120%;
   /* or 38px */
 
-  display: flex;
-  align-items: center;
-  text-decoration-line: line-through;
-
-  /* Gray darker */
-
-  color: #4E4E4E;
+  color: #DC6E05;
 `

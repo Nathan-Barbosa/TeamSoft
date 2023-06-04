@@ -6,7 +6,9 @@ import account_circle_24px from '../../../public/account_circle_24px.svg'
 import shopping_cart_24px from '../../../public/shopping_cart_24px.svg'
 
 
+
 const Header = () => {
+
   return (
     <StyledHeader>
       <HeaderContainer>
