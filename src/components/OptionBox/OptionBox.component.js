@@ -6,7 +6,7 @@ const OptionBox = ({ingredient, value}) => {
     <StyledOptionBox> 
       <div>
         <h4>{ingredient}</h4>
-        <p>+ R${value}</p>
+        <p>+ {value.toLocaleString("pt-BR", {style:"currency", currency:"BRL"})}</p>
       </div>
       <CountBox width={110}/>
     </StyledOptionBox>

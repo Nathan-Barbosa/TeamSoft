@@ -22,6 +22,10 @@ export const IngredientOptions = styled.div`
   width: 100%;
   height: 537px;
   overflow-y: scroll;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  
 `
 export const OptionsHeader = styled.div`
   display: flex;
@@ -50,15 +54,32 @@ export const OptionsHeader = styled.div`
   }  
 `
 
-export const TextInput = styled.input`
-  width: 100%;
-  height: 55px;
-  left: 0px;
-  top: 491px;
-  background: rgba(253, 215, 14, 0.2);
-  display: flex;
-  align-items: center;
-  border: none;
+export const AskText = styled.div`
+display: flex;
+justify-content: center;
+flex-direction: column;
+width: 100%;
+padding: 8px 16px;
+background: rgba(253, 215, 14, 0.2);
+
+h4 {
+  margin: 2px 0;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+p {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  color: #E49700;
+  margin: 0;
+}  
+
 `
 export const IngredientButtons = styled.div`
   display: grid;

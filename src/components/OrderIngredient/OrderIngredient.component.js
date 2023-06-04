@@ -1,8 +1,10 @@
-import { AddButton, IngredientButtons, IngredientOptions, OptionsHeader, StyledOrderIngredient, TextInput } from './OrderIngredient.styles.js'
+import { AddButton, AskText, IngredientButtons, IngredientOptions, OptionsHeader, StyledOrderIngredient} from './OrderIngredient.styles.js'
 import CountBox  from '../CountBox/CountBox.component'
 import OptionBox  from '../OptionBox/OptionBox.component'
 
-const OrderIngredient = () => {
+const OrderIngredient = ({
+  ingredientData
+}) => {
   return (
     <StyledOrderIngredient>
       <IngredientOptions>
@@ -12,13 +14,14 @@ const OrderIngredient = () => {
           <p>Até 8 ingredientes</p>
         </OptionsHeader>
 
-        <OptionBox ingredient="Queijo cheddar" value={4.99}/>
-        <OptionBox ingredient="Bacon" value={2.50}/>
-        <OptionBox />
-        <OptionBox />
-        <OptionBox />
+        
+        {ingredientData.map(item => (
+          <OptionBox key={item.id} ingredient={item.nm_item} value={item.vl_item}></OptionBox>
+        ))}
 
-        <TextInput type="text" placeholder="Precisa de talher?"></TextInput>
+        <AskText >
+          <h4>Precisa de talher?</h4>
+        </AskText>
       </IngredientOptions>
 
       <IngredientButtons>
