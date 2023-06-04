@@ -13,12 +13,12 @@ import productImage from '../../../public/foto.png'
   // }
 
 const ProductInfo = ({
-  data
+  productData
 }) => {
   return (
     <StyledProductInfo>
 
-        {data.map(item => (
+        {productData.map(item => (
           <ProductItems key={item.id}>
               <Image src={productImage} alt="ProductImage" width="597" height="388"></Image>
               <ProductTitle>{item.nm_product}</ProductTitle>

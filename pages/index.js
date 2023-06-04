@@ -27,7 +27,7 @@ export default function Home() {
     <main>
       <Header/>
       <Container >
-        <ProductInfo data={data}/>
+        <ProductInfo productData={data}/>
         <OrderIngredient />
       </Container>
     </main>    
