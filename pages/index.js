@@ -8,28 +8,28 @@ import dataJson from "@/Data.json"
 export default function Home() {
   const [data, setData] = useState(dataJson);
 
-  // const fetchData = async () => {
-  //   try {
-  //     fetch('https://6077803e1ed0ae0017d6aea4.mockapi.io/test-frontend/products')
-  //     .then(response => response.json())
-  //     .then(data => setData(data))
-  //   } catch (error) {
-  //     console.log('Ocorreu um erro:', error);
-  //   }
-  // };
+  const fetchData = async () => {
+    try {
+      fetch('https://6077803e1ed0ae0017d6aea4.mockapi.io/test-frontend/products')
+      .then(response => response.json())
+      .then(data => setData(data))
+    } catch (error) {
+      console.log('Ocorreu um erro:', error);
+    }
+  };
   
   
-  // useEffect(() => {
-  //   fetchData();
-  // }, []);
+  useEffect(() => {
+    fetchData();
+  }, []);
 
   if(data.length){
     return (      
       <main>
         <Header/>
         <Container >
-          {/* <ProductInfo productData={data}/> */
-          <OrderIngredient ingredientData={data[0]?.ingredients[0]?.itens}/>}
+          <ProductInfo productData={data}/>
+          <OrderIngredient ingredientData={data[0]?.ingredients[0]?.itens}/>
         </Container>
       </main>    
     )

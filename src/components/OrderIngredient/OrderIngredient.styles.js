@@ -59,8 +59,9 @@ display: flex;
 justify-content: center;
 flex-direction: column;
 width: 100%;
-padding: 8px 16px;
+padding: 8px 16px 24px 16px;
 background: rgba(253, 215, 14, 0.2);
+margin-top: 16px;
 
 h4 {
   margin: 2px 0;
@@ -70,16 +71,6 @@ h4 {
   font-size: 14px;
   line-height: 16px;
 }
-
-p {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  color: #E49700;
-  margin: 0;
-}  
-
 `
 export const IngredientButtons = styled.div`
   display: grid;
