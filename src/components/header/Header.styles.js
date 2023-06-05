@@ -1,10 +1,12 @@
 import styled from 'styled-components'
+import { Media } from '../Media/Media.component';
 
 export const StyledHeader = styled.header`
-  width: 100%;
   background: #F4F4F4;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
   padding: 16px 40px;
+
+
 `
 export const HeaderContainer = styled.div`
   display: flex;
@@ -13,6 +15,11 @@ export const HeaderContainer = styled.div`
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+  ${Media.tablet`
+   justify-content: center;
+  `
+  }
+  
 `
 
 export const HeaderItems = styled.div`
@@ -21,9 +28,14 @@ export const HeaderItems = styled.div`
   justify-content: space-between;
   gap: 24px;
   width: 70%;
+  ${Media.tablet`
+   display: none;
+   
+`
+}
 `
 
-export const HeaderAddress= styled.div`
+export const AddressContent= styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -31,7 +43,6 @@ export const HeaderAddress= styled.div`
   border: none;
   cursor: pointer;
   padding: 8px;
-  height: 48px;
   border-radius: 4px;
   max-width: 230px;
   width: 100%;
@@ -50,7 +61,7 @@ export const Adress= styled.div`
   color: #656363;
 `
 
-export const HeaderSearch = styled.div`
+export const SearchContent = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -69,7 +80,7 @@ export const HeaderSearch = styled.div`
   }
 `
 
-export const HeaderAccount = styled.div`
+export const AccountContent = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -77,7 +88,7 @@ export const HeaderAccount = styled.div`
   cursor: pointer;
   color: #ED3237;
 `
-export const HeaderCart = styled.div`
+export const CartContent = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;

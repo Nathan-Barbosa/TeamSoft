@@ -1,8 +1,8 @@
-import { StyledPopover, PopoverHeader, PopoverBody, PopoverContainer, PopoverItemInfo } from './Popover.styles';
+import { StyledPopover, PopoverHeader, PopoverBody, PopoverItemInfo } from './Popover.styles';
 
-const Popover = () => {
+const Popover = ({show}) => {
   return (
-    <StyledPopover>
+    <StyledPopover className={show && "show"}>
       <PopoverHeader>
         <h4>Adicionado com Sucesso</h4>
       </PopoverHeader>
@@ -25,3 +25,4 @@ const Popover = () => {
 }
 
 export default Popover;
+

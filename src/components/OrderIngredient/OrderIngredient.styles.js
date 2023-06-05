@@ -1,15 +1,23 @@
 import styled from 'styled-components'
+import { Media } from '../Media/Media.component'
 
 export const StyledOrderIngredient = styled.div`
   display: flex;
   align-items:center;
   flex-direction: column;
-  width: 439px;
-  height: 662px;
+  max-width: 439px;
+  width: 100%;
+  max-height: 662px;
+  height: 100%;
   padding: 32px;
   gap: 21px;
   border: 1px solid #686868;
   border-radius: 8px;
+
+  ${Media.tablet`
+    border: none;
+    padding: 0;
+  `}
 `
 
 // ingredient options
@@ -94,4 +102,5 @@ export const AddButton = styled.button`
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
+  cursor: pointer;
 `

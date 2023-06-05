@@ -2,10 +2,19 @@ import { AddButton, AskText, IngredientButtons, IngredientOptions, OptionsHeader
 import CountBox  from '../CountBox/CountBox.component'
 import OptionBox  from '../OptionBox/OptionBox.component'
 import TextAnswer from '../TextAnswer/TextAnswer.component';
+import { useState } from 'react';
+import Popover from '../Popover/Popover.component';
 
 const OrderIngredient = ({
   ingredientData
 }) => {
+  const [ show, setShow ] = useState(false)
+
+  const handleAddProduct = () => {
+    setShow(true)
+    console.log(show)
+  }
+  
   return (
     <StyledOrderIngredient>
       <IngredientOptions>
@@ -26,8 +35,9 @@ const OrderIngredient = ({
       </IngredientOptions>
       <IngredientButtons>
         <CountBox />
-        <AddButton>Adicionar</AddButton>
+        <AddButton onClick={() => handleAddProduct()}>Adicionar</AddButton>
       </IngredientButtons>
+      <Popover show={show}/>
     </StyledOrderIngredient>
   );
 }

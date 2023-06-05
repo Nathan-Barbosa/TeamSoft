@@ -20,13 +20,26 @@ export const TextAnswerOption = styled.div`
   padding-bottom: 12px;
 
   input {
-    width: 1.3em;
-    height: 1.3em;
+    width: 16px;
+    height: 16px;
     background-color: white;
     border-radius: 50%;
-    border: 1px solid #F09035;
+    border: 1px solid #FEBC10;
     appearance: none;
     -webkit-appearance: none;
     cursor: pointer;
+    position: relative;
+  }
+
+  input[type=checkbox]:checked:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    background: #F09035;
   }
 `
