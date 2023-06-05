@@ -4,8 +4,7 @@ import  Deliverize  from '../../../public/Deliverize.svg'
 import keyboard_arrow_down_24px from '../../../public/keyboard_arrow_down_24px.svg'
 import account_circle_24px from '../../../public/account_circle_24px.svg'
 import shopping_cart_24px from '../../../public/shopping_cart_24px.svg'
-
-
+import Popover from '../Popover/Popover.component';
 
 const Header = () => {
 
@@ -39,9 +38,10 @@ const Header = () => {
               <Cart>
                 <CartOrderCount >1</CartOrderCount>
                 <Image src={shopping_cart_24px} alt="shoppingCartIcon"></Image>
+                <Popover />
               </Cart>
               <div>Carrinho</div>
-          </HeaderCart>
+          </HeaderCart> 
 
         </HeaderItems>        
       </HeaderContainer>

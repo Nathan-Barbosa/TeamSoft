@@ -1,4 +1,4 @@
-import  styled  from 'styled-components'
+import styled from 'styled-components'
 
 export const StyledHeader = styled.header`
   width: 100%;
@@ -102,10 +102,6 @@ width: 16px;
 height: 16px;
 line-height:16px;
 text-align: center;
-
-// @keyframes popoverExample{
-//   0 {}
-// }
 `
 export const HeaderSearchIcon = styled.svg`
   cursor: pointer;
