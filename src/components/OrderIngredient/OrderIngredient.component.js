@@ -21,7 +21,6 @@ const OrderIngredient = ({
         <AskText >
           <h4>Precisa de talher?</h4>
         </AskText>
-
         <TextAnswer />
 
       </IngredientOptions>

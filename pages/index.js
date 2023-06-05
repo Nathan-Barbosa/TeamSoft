@@ -6,8 +6,9 @@ import React, { useState, useEffect } from "react";
 import dataJson from "@/Data.json"
 
 export default function Home() {
+  //
   const [data, setData] = useState(dataJson);
-
+  
   const fetchData = async () => {
     try {
       fetch('https://6077803e1ed0ae0017d6aea4.mockapi.io/test-frontend/products')
@@ -19,20 +20,26 @@ export default function Home() {
   };
   
   
-  useEffect(() => {
-    fetchData();
-  }, []);
+  // useEffect(() => {
+  //   fetchData();
+  // }, []);
 
   if(data.length){
     return (      
       <main>
         <Header/>
-        <Container >
-          <ProductInfo productData={data}/>
-          <OrderIngredient ingredientData={data[0]?.ingredients[0]?.itens}/>
-        </Container>
+        {
+          fetchData ? (
+            <Container >
+              <ProductInfo productData={data}/>
+              <OrderIngredient ingredientData={data[0]?.ingredients[0]?.itens}/>
+            </Container>
+          )
+          :
+          <p>Carregando API...</p>   
+        }
       </main>    
     )
   }  
-  return <p>Carregando...</p>
+
 }

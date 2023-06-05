@@ -1,5 +1,5 @@
 import Image from 'next/image.js';
-import { StyledHeader, HeaderAddress, HeaderItems, HeaderInput, HeaderSearch, HeaderSearchIcon, HeaderCart, HeaderAccount, HeaderContainer } from './Header.styles.js'
+import { StyledHeader, HeaderAddress, HeaderItems, HeaderInput, HeaderSearch, HeaderSearchIcon, HeaderCart, HeaderAccount, HeaderContainer, AdressTittle, Adress, CartOrderCount, Cart } from './Header.styles.js'
 import  Deliverize  from '../../../public/Deliverize.svg'
 import keyboard_arrow_down_24px from '../../../public/keyboard_arrow_down_24px.svg'
 import account_circle_24px from '../../../public/account_circle_24px.svg'
@@ -12,12 +12,14 @@ const Header = () => {
   return (
     <StyledHeader>
       <HeaderContainer>
-        <Image src={Deliverize} alt="Logo"/>
+          <Image src={Deliverize} alt="Logo"/>
         <HeaderItems>
 
           <HeaderAddress>
-            <div>Entrega:</div>
-            <div>R. Antonio Braune, 222</div>
+            <div>
+              <AdressTittle>Entrega:</AdressTittle>
+              <Adress>R. Antonio Braune, 222</Adress>
+            </div>
             <Image src={keyboard_arrow_down_24px} alt="searchArrowDownButton"></Image>
           </HeaderAddress>
 
@@ -34,9 +36,13 @@ const Header = () => {
           </HeaderAccount>
 
           <HeaderCart>
-            <Image src={shopping_cart_24px} alt="shoppingCartIcon"></Image>
-            <div>Carrinho</div>
+              <Cart>
+                <CartOrderCount >1</CartOrderCount>
+                <Image src={shopping_cart_24px} alt="shoppingCartIcon"></Image>
+              </Cart>
+              <div>Carrinho</div>
           </HeaderCart>
+
         </HeaderItems>        
       </HeaderContainer>
     </StyledHeader>
