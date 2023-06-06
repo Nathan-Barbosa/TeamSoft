@@ -12,9 +12,8 @@ const OrderIngredient = ({
 
   const handleAddProduct = () => {
     setShow(true)
-    console.log(show)
   }
-  
+
   return (
     <StyledOrderIngredient>
       <IngredientOptions>

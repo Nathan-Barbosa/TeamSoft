@@ -2,16 +2,6 @@ import Image from 'next/image.js';
 import { ProductDescription, ProductFullValue, ProductItems, ProductOff, ProductTitle, ProductValue, StyledProductInfo } from './ProductInfo.styles.js'
 import productImage from '../../../public/foto.png'
 
-
-  // const [ id, name, description, vl_price, vl_discount, url_image ] = {
-  //   id: data.id,
-  //   name: data.name,
-  //   description: data.description,
-  //   vl_price: data.price,
-  //   vl_discount: data.vl_discount,
-  //   url_image: data.url_image
-  // }
-
 const ProductInfo = ({
   productData
 }) => {

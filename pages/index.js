@@ -3,11 +3,10 @@ import Header from "@/components/Header/Header.component";
 import OrderIngredient from "@/components/OrderIngredient/OrderIngredient.component";
 import ProductInfo from "@/components/ProductInfo/ProductInfo.component";
 import React, { useState, useEffect } from "react";
-import dataJson from "@/Data.json"
+
 
 export default function Home() {
-  //
-  const [data, setData] = useState(dataJson);
+  const [data, setData] = useState([]);
   
   const fetchData = async () => {
     try {
@@ -20,9 +19,9 @@ export default function Home() {
   };
   
   
-  // useEffect(() => {
-  //   fetchData();
-  // }, []);
+  useEffect(() => {
+    fetchData();
+  }, []);
 
   if(data.length){
     return (      
