@@ -20,7 +20,6 @@ export const StyledOrderIngredient = styled.div`
   `}
 `
 
-// ingredient options
 export const IngredientOptions = styled.div`
   display: flex;
   flex-direction: column;
@@ -32,8 +31,7 @@ export const IngredientOptions = styled.div`
   overflow-y: scroll;
   &::-webkit-scrollbar {
     display: none;
-  }
-  
+  }  
 `
 export const OptionsHeader = styled.div`
   display: flex;
@@ -63,13 +61,13 @@ export const OptionsHeader = styled.div`
 `
 
 export const AskText = styled.div`
-display: flex;
-justify-content: center;
-flex-direction: column;
-width: 100%;
-padding: 8px 16px 24px 16px;
-background: rgba(253, 215, 14, 0.2);
-margin-top: 16px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 8px 16px 24px 16px;
+  background: rgba(253, 215, 14, 0.2);
+  margin-top: 16px;
 
 h4 {
   margin: 2px 0;

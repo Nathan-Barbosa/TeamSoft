@@ -5,7 +5,6 @@ import keyboard_arrow_down_24px from '../../../public/keyboard_arrow_down_24px.s
 import account_circle_24px from '../../../public/account_circle_24px.svg'
 import shopping_cart_24px from '../../../public/shopping_cart_24px.svg'
 
-
 const Header = () => {
   
   return (
@@ -36,7 +35,7 @@ const Header = () => {
 
           <CartContent>
               <Cart>
-                <CartOrderCount >1</CartOrderCount>
+                <CartOrderCount>1</CartOrderCount>
                 <Image src={shopping_cart_24px} alt="shoppingCartIcon"></Image>
               </Cart>
               <div>Carrinho</div>

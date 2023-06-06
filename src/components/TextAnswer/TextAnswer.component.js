@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import  { StyledTextAnswer, TextAnswerOption, TextAnswerOptions }  from './TextAnswer.styles';
 
-
 const TextAnswer = () => {
   
   const [ isChecked, setIsChecked ] = useState(false);
@@ -18,6 +17,7 @@ const TextAnswer = () => {
  return (
     <StyledTextAnswer>
       <TextAnswerOptions>
+
         <TextAnswerOption>
             <label name="sim">Sim</label>
             <input
@@ -30,14 +30,15 @@ const TextAnswer = () => {
         </TextAnswerOption>
 
         <TextAnswerOption>
-            <label name="nao">Não</label>
-              <input
-                type="checkbox"
-                  id="checkbox"
-                  value="nao"
-                  checked={!isChecked}
-                  onChange={checkHandler} />
+          <label name="nao">Não</label>
+            <input
+              type="checkbox"
+                id="checkbox"
+                value="nao"
+                checked={!isChecked}
+                onChange={checkHandler} />
         </TextAnswerOption>
+        
       </TextAnswerOptions>
     </StyledTextAnswer>
  ) 

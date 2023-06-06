@@ -4,7 +4,6 @@ import OrderIngredient from "@/components/OrderIngredient/OrderIngredient.compon
 import ProductInfo from "@/components/ProductInfo/ProductInfo.component";
 import React, { useState, useEffect } from "react";
 
-
 export default function Home() {
   const [data, setData] = useState([]);
   
@@ -16,8 +15,7 @@ export default function Home() {
     } catch (error) {
       console.log('Ocorreu um erro:', error);
     }
-  };
-  
+  };  
   
   useEffect(() => {
     fetchData();

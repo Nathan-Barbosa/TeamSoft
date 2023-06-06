@@ -9,7 +9,6 @@ export const StyledProductInfo = styled.div`
   width: 100%;
   max-height: 662px;
   height: 100%;
-
  `
 export const ProductItems = styled.div`
   display: flex;

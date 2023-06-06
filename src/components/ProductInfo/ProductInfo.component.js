@@ -4,10 +4,9 @@ import productImage from '../../../public/foto.png'
 
 const ProductInfo = ({
   productData
-}) => {
+  }) => {
   return (
     <StyledProductInfo>
-
         {productData.map(item => (
           <ProductItems key={item.id}>
               <Image src={productImage} alt="ProductImage" width="597" height="388"></Image>
@@ -19,7 +18,6 @@ const ProductInfo = ({
               </ProductValue>
           </ProductItems>
         ))}
-
     </StyledProductInfo>
   );
 }
